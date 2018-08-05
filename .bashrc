@@ -17,4 +17,3 @@ alias rcgit='\git --git-dir=$HOME/.rc.d --work-tree=$HOME'
 
 PS1='[\[\e[32m\]\u\[\e[0m\]@\[\e[1;32m\]\h\[\e[0m\]:\[\e[36m\]`pwd`/\[\e[0m\]]\n    \[\e[1;31m\]\$\[\e[0m\] '
 
-#aliases
