@@ -7,5 +7,6 @@ set autoindent
 set laststatus=2
 set splitbelow
 set splitright
+syntax on
 
 command! Rerc so ~/.vimrc

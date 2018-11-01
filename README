@@ -6,9 +6,22 @@ return.
  
 These are my .rc files for bash and various other applications. 
 
-Best way to install this repo is with the following command:
+Best way to install this repo is to run the following commands in your home
+directory:
 
-git clone --bare https://github.com/dmbonsall/DotRCFiles.git $HOME/.rc.d
+```
+$ git clone --bare https://github.com/dmbonsall/DotRCFiles.git $HOME/.rc.d
+$ alias rcgit='\git --git-dir=$HOME/.rc.d --work-tree=$HOME'
+$ rcgit reset --hard
+```
+
+If you are looking to set up your own system to manage rc files accross multiple
+hosts, you will want to run ```git clone``` using ssh, not https so that you are
+able to push and pull properly to your own repo.
+
+```
+$ git clone --bare git@github.com:dmbonsall/DotRCFiles.git $HOME/.rc.d
+```
 
 This will copy these files into your home directory. Beware that they may
 overwrite your existing configuration files so I would recomend backing them
